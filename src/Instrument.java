@@ -1,7 +1,7 @@
-public class Instrument implements InstrumentsPossibilities {
+public abstract class Instrument implements InstrumentsPossibilities {
 
     protected static byte cnt = 0;
-     static String name = "Instrument";
+    private String name = "Instrument";
 
     public String getName() {
         return name;

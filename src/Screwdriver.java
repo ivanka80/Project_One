@@ -3,6 +3,10 @@ public class Screwdriver extends Instrument {
     private String name;
     static byte cnt1 = 0;
 
+    Screwdriver() {
+        super.cnt++;
+        cnt1++;
+    }
 
     @Override
     public void twistAbility() {
@@ -15,7 +19,7 @@ public class Screwdriver extends Instrument {
     }
 
     public String getParantName() {
-        name = super.name;
+        name = super.getName();
         return name;
     }
 
@@ -25,11 +29,6 @@ public class Screwdriver extends Instrument {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    Screwdriver() {
-        super.cnt++;
-        cnt1++;
     }
 
     public static int showInfo() {
